@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: account-service
+
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017}
+      database: ${ACCOUNT_DB:ridelink_account_db}
+
+jwt:
+  secret: ${JWT_SECRET}
